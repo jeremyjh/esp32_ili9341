@@ -20,8 +20,8 @@ extern "C" {
  *********************/
 
 #define DISP_SPI_MOSI 23
-#define DISP_SPI_CLK  19
-#define DISP_SPI_CS   22
+#define DISP_SPI_CLK  18
+#define DISP_SPI_CS   14
 
 
 /**********************
