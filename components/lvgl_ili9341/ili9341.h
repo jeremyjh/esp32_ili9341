@@ -19,9 +19,9 @@ extern "C" {
  *      DEFINES
  *********************/
 #define DISP_BUF_SIZE (LV_HOR_RES_MAX * 40)
-#define ILI9341_DC   21
-#define ILI9341_RST  18
-#define ILI9341_BCKL 5
+#define ILI9341_DC   27
+#define ILI9341_RST  33
+#define ILI9341_BCKL 32
 
 // if text/images are backwards, try setting this to 1
 #define ILI9341_INVERT_DISPLAY 0
