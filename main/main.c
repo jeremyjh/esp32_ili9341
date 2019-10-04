@@ -18,10 +18,10 @@
 #include "esp_freertos_hooks.h"
 
 
-#include "drv/disp_spi.h"
-#include "drv/ili9341.h"
-#include "drv/tp_spi.h"
-#include "drv/xpt2046.h"
+#include "lvgl_ili9341/disp_spi.h"
+#include "lvgl_ili9341/ili9341.h"
+#include "lvgl_ili9341/tp_spi.h"
+#include "lvgl_ili9341/xpt2046.h"
 
 static void IRAM_ATTR lv_tick_task(void);
 
