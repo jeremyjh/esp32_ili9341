@@ -37,10 +37,12 @@ void app_main()
 	xpt2046_init();
 #endif
 
-    static lv_color_t buf1[DISP_BUF_SIZE];
-    static lv_color_t buf2[DISP_BUF_SIZE];
-    static lv_disp_buf_t disp_buf;
-    lv_disp_buf_init(&disp_buf, buf1, buf2, DISP_BUF_SIZE);
+  lv_color_t* buf1 = (lv_color_t*)lv_mem_alloc(DISP_BUF_SIZE);
+  lv_color_t* buf2 = (lv_color_t*)lv_mem_alloc(DISP_BUF_SIZE);
+  lv_mem_assert(buf1);
+  lv_mem_assert(buf2);
+  lv_disp_buf_t disp_buf;
+  lv_disp_buf_init(&disp_buf, buf1, buf2, DISP_BUF_SIZE);
 
 	lv_disp_drv_t disp_drv;
 	lv_disp_drv_init(&disp_drv);
