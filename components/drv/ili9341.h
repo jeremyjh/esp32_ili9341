@@ -24,7 +24,7 @@ extern "C" {
 #define ILI9341_BCKL 32
 
 // if text/images are backwards, try setting this to 1
-#define ILI9341_INVERT_DISPLAY 0
+#define ILI9341_INVERT_DISPLAY 1
 
 /**********************
  *      TYPEDEFS
